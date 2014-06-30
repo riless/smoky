@@ -1,0 +1,646 @@
+*{font-family: "Roboto", Arial;}
+
+Header {min-height: 60px; min-width: 80px; background: #222326; /* background-image: url(":/res/header_bg.png"); */}
+
+#salutationLbl{color: #88898c}
+
+#disconnectBtn{border: none; color: white; background:#ec151f; margin-right: 10px; padding: 2px; border-radius: 3px;}
+#disconnectBtn:hover{background: #f2353e; }
+#disconnectBtn:pressed{background: #de151e; }
+
+#overlapLoader{min-height: 31px; min-width: 31px;}
+
+#logo{
+	background-image: url(":/res/logo.png");
+	background-repeat: no-repeat;
+	min-width: 169px;
+	min-height: 60px;
+	/* background-color: red; */
+}
+
+LoadView{background: url(":/res/background.jpg");}
+
+LoadView{
+	
+    /* border-radius: 10px; */
+}
+
+LoadView[stat = "dropEnter"]{
+	border-color: #83b4d8;
+    /* border-radius: 10px; */
+   	/* color: #83b4d8; */
+}
+
+#dropZone{border: 4px dashed #bbb; padding: 50px; }
+
+#deposezFichierLbl{  font-weight: 300; font-size: 24px; color: #fff;}
+
+ProcessImage {background: #121314;}
+
+
+#ProcessLeftColFrame{width: 640px;}
+
+#browseImagesBtn{
+	margin-top: 20px;
+	color: #fafafa;
+	background: #90cd00;
+	min-height: 25px;
+	padding: 10px 15px;
+	font-weight: bold;
+	font-family: "Segoe UI", "Open Sans", Arial;
+	font-size: 14px;
+	border-radius: 3px;
+}
+
+#browseImagesBtn:hover{ color: #fff; }
+#browseImagesBtn:pressed{ color: #fff; background-color: #85be00; }
+
+Theater{
+	/* margin: 0 20px; */
+	/* background: #161713; */
+	max-width: 662px;
+}
+
+#theaterLbl{
+	
+	min-height: 480px;
+	max-height: 480px;
+	min-width: 640px;
+	max-width: 640px;
+
+	/* border: 1px solid #000; */
+	/* background: url(":res/damier.png") repeat #fdfdfd; */
+	background: transparent;
+	color: rgba(200,200,200,0.5);
+	font-size: 36px;
+}
+
+#imagesScrollArea {
+	min-height: 106px;
+	max-height: 106px;
+	background: #242520;
+}
+
+ShowCase{
+	padding: 5px;
+	background: transparent;
+	
+}
+
+ShowCase #imageBtn{
+
+	min-width: 75px; 
+	max-width: 75px; 
+	min-height:  75px;
+	max-height:  75px;
+	border: 2px solid #222;
+	margin: 0 2px;
+}
+
+ShowCase #imageLbl{
+	margin: 0 2px 0 4px;
+	min-width: 75px; 
+	max-width: 75px; 
+	min-height:  75px;
+	max-height:  75px;
+}
+
+ShowCase #imageBtn:hover{
+	border-color: #141412;
+}
+
+ShowCase #imageBtn:checked{
+	border-color: #A6E22E;
+}
+
+SideBar{
+	border: none;
+	/* background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #2d2d2d, stop:0.925 #2d2d2d, stop:1 #232323); */
+	padding: 0px;
+	margin: 0px;
+	min-width: 75px;
+	background-image: url(":/res/side.png");
+}
+
+#loadImageBtn, #loadVideoBtn, #loadCamBtn{
+	margin: 10px 0;
+	height: 70px;
+	background-color: #f8f8f8;
+	border: 1px solid #ebebeb;
+	border-bottom-width: 5px;
+	color: #333333;
+	font-size: 18px;
+	border-radius: 5px;
+	text-align: bottom;
+	padding-bottom: 35px;
+	padding-top: 35px;
+	background-position: center;
+	background-repeat: no-repeat;
+ 	max-width: 150px;
+ 	min-width: 150px;
+}
+
+#loadImageBtn{background-image: url(":/res/loadImage.png");}
+#loadVideoBtn{background-image: url(":/res/loadVideo.png");}
+#loadCamBtn{background-image: url(":/res/loadCam.png");}
+
+#loadImageBtn:hover, #loadVideoBtn:hover, #loadCamBtn:hover{
+	background-color: #fbfbfb;
+	border-color: #e0e0e0;
+}
+
+#loadImageBtn:pressed, #loadVideoBtn:pressed, #loadCamBtn:pressed{
+	background-color: #f7f7f7;
+}
+
+#getStartedLbl, #loadImageLbl{
+	font-size: 24px;
+	color: #999;
+	font-weight: 400;
+}
+
+#backButton, #newSearch{
+	padding: 5px 10px ;
+	max-width: 170px;
+	color: white;
+	background-color: #b30b3f;
+	border: 1px solid #9a0a36;
+	border-radius: 3px;
+}
+
+#backButton:hover{background-color: #be0e44;}
+#backButton:pressed{background-color: #a80b3b;}
+
+#newSearch{background-color: #0C99B1;border: 1px solid #0B899F;}
+
+#newSearch:hover{background-color: #0DA5BF;}
+#newSearch:pressed{background-color: #0B8CA4;}
+
+SideBar QPushButton{
+	text-align: bottom;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	font-size: 11px;
+	color: #888888;
+	border: none;
+	height: 67px;
+	width: 70px;
+	padding-bottom: 13px;
+}
+
+QStackedWidget#stackedWidget{
+	background: #e8e8e8;
+}
+
+SideBar QPushButton:hover,
+SideBar QPushButton:checked{
+	color: white;
+}
+QPushButton{ outline: none ;}
+
+QPushButton#homeBtn {
+background-image: url(":/res/homeBtn_normal.png");
+}
+QPushButton#homeBtn:hover {
+background-image: url(":/res/homeBtn_hover.png");
+}
+QPushButton#homeBtn:checked {
+background-image: url(":/res/homeBtn_active.png");
+}
+
+
+QPushButton#addBtn {
+background-image: url(":/res/addBtn_normal.png");
+}
+QPushButton#addBtn:hover {
+background-image: url(":/res/addBtn_hover.png");
+}
+QPushButton#addBtn:checked {
+background-image: url(":/res/addBtn_active.png");
+}
+
+
+
+
+QPushButton#historyBtn {
+background-image: url(":/res/historyBtn_normal.png");
+}
+QPushButton#historyBtn:hover {
+background-image: url(":/res/historyBtn_hover.png");
+}
+QPushButton#historyBtn:checked {
+background-image: url(":/res/historyBtn_active.png");
+}
+
+
+QPushButton#statsBtn {
+background-image: url(":/res/statsBtn_normal.png");
+}
+QPushButton#statsBtn:hover {
+background-image: url(":/res/statsBtn_hover.png");
+}
+QPushButton#statsBtn:checked {
+background-image: url(":/res/statsBtn_active.png");
+}
+
+QPushButton#searchBtn {
+background-image: url(":/res/searchBtn_normal.png");
+}
+QPushButton#searchBtn:hover {
+background-image: url(":/res/searchBtn_hover.png");
+}
+QPushButton#searchBtn:checked {
+background-image: url(":/res/searchBtn_active.png");
+}
+
+QPushButton#settingsBtn {
+background-image: url(":/res/settingsBtn_normal.png");
+}
+QPushButton#settingsBtn:hover {
+background-image: url(":/res/settingsBtn_hover.png");
+}
+QPushButton#settingsBtn:checked {
+background-image: url(":/res/settingsBtn_active.png");
+}
+
+
+QPushButton#aboutBtn {
+background-image: url(":/res/aboutBtn_normal.png");
+}
+QPushButton#aboutBtn:hover {
+background-image: url(":/res/aboutBtn_hover.png");
+}
+QPushButton#aboutBtn:checked {
+background-image: url(":/res/aboutBtn_active.png");
+}
+
+#detectedFacesScrollArea{ max-width: 190px; min-width: 190px; background: #191919;}
+QScrollArea{border: none;}
+
+/*horizontal scrollbar*/
+
+QScrollBar:vertical{
+	background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+		stop: 0 #212121, stop:1 #323232);
+	width: 18px;
+}
+
+QScrollBar::handle:vertical{
+	width: 8px;
+	border-radius: 4px;
+	margin: 5px;
+	background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+		stop: 0 #585858, stop:1 #404040);
+	border: 1px solid #191919;
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+		stop: 0 #212121, stop:1 #323232);
+}
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical{
+	height: 0;
+}
+
+/*horizontal scrollbar*/
+
+QScrollBar:horizontal{
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+		stop: 0 #212121, stop:1 #323232);
+	height: 17px;
+}
+
+QScrollBar::handle:horizontal{
+	height: 8px;
+	border-radius: 4px;
+	margin: 4px;
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+		stop: 0 #585858, stop:1 #404040);
+	border: 1px solid #191919;
+}
+
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+		stop: 0 #212121, stop:1 #323232);
+}
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal{
+	width: 0;
+}
+
+
+DetectedFaces{ min-width: 170px; max-width: 170px; background: transparent;}
+
+DetectedFacesItem QLabel{color: #999;}
+DetectedFacesItem:checked QLabel{color: #efefef;}
+
+DetectedFacesItem{ background: #212121; border: none; border-right: 1px solid #f0f0f0; height: 48px; max-width: 168px;}
+DetectedFacesItem[faceItem = "known"]{ border-color: #8bdb2c; }
+DetectedFacesItem:hover, DetectedFacesItem[faceItem = "known"]:hover{background: #333; border-right-width: 2px}
+DetectedFacesItem:checked, DetectedFacesItem[faceItem = "known"]:checked{background: #333; border-right-width: 3px}
+
+DetectedFacesItem #avatarLbl{max-width: 48px; max-height: 48px; border-radius: 3px 0 0 3px;}
+DetectedFacesItem #infoLbl, DetectedFacesItem #completeNameLbl{ margin: 2px 10px 0; width: 100px; max-height: 17px;}
+DetectedFacesItem #completeNameLbl{}
+
+#rect{ background-color: transparent; border: 3px solid rgba(208,223,229, 0.5); border-radius: 3px; }
+#rect:hover{ border-color: rgba(208,223,229, 0.8); }
+#rect:checked{ border-color: rgba(208,223,229,1); }
+#rect[faceRect = "known"]{ border-color: rgba(139,219,44, 0.5); }
+#rect[faceRect = "known"]:hover{ border-color: rgba(139,219,44, 0.8); }
+#rect[faceRect = "known"]:checked{ border-color: rgba(139,219,44,1); }
+
+#nbFacesLbl{ font-weight: 300; color: #E6DB74; font-size: 18px; }
+
+SidePanel {
+	min-width: 400px;
+	max-width: 400px;
+	/* max-width: 330px; */
+	/* background: #161713; */
+	font-family: "Open Sans", Arial;
+	padding: 10px 10px 0 10px;
+}
+
+
+SidePanel #tabWidget::tab-bar{
+}
+
+SidePanel #tabWidget::pane{
+	border: none;
+	background: #272822;
+}
+
+SidePanel #tabWidget QTabBar::tab {
+    font-size: 11px;
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+		stop: 0 #50504e, stop:1 #3d3d3a);
+    color: #c1c1bf;
+    padding: 7px 0;
+    min-width: 100px;
+    max-width: 100px;
+    border: 1px solid #666664;
+    border-width: 1px 0 0 0;
+	
+    
+}
+
+SidePanel #tabWidget QTabBar::tab:last{
+	border-top-right-radius: 3px;
+}
+
+SidePanel #tabWidget QTabBar::tab:first{
+	border-top-left-radius: 3px;
+}
+
+SidePanel #tabWidget QTabBar::tab:selected {
+     background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                stop:0 #363731, stop:1 #272822);
+     border-color: #474842;
+     border-bottom: none;
+    color: #efefef;
+
+}
+
+SidePanel #tabWidget QTabBar::right-corner{
+
+}
+
+SidePanel #tabWidget QTabBar::tab:hover:selected{
+    color: #efefef;
+
+}
+
+SidePanel #tabWidget QTabBar::tab:hover{
+	color: #efefef;
+}
+
+SidePanel #tabWidgetQTabBar::tab:selected {
+    
+}
+
+SidePanel #tabWidgetQTabBar::tab:!selected {
+    
+}
+
+
+#connexionFrame{border-radius: 3px; background: #d1d1d1; max-width: 300px; max-height: 230px; }
+
+#loginAvatarLbl{ min-width: 96px; max-width: 96px; min-height: 96px; max-height: 96px; background: #424242;}
+#loginUserEdt, #loginPasswordEdt, #serverIpEdt{ border: none; background: #e3e3e3; padding: 7px 5px;}
+
+#loginIndication{color: #1a7aa7;}
+#loginSubmitBtn{border-radius: 3px; background: #1bb67a; color: #eaf5f1; border: none; padding: 10px;}
+#loginSubmitBtn:hover{background: #1cba7d;}
+#loginSubmitBtn:focus{background: #19ae74; color: white;}
+#loginAvatarLbl[login = "invalid"], #loginUserEdt[login = "invalid"], #loginPasswordEdt[login = "invalid"]{
+	border: 1px solid red;
+}
+
+
+SidePanel QLabel{color: #F8F8F2;}
+SidePanel QLabel{color: #555; font-size: 12px;  }
+
+SidePanel QLineEdit, SidePanel #addressTxt, QComboBox, QSpinBox{ border: none; /* border: 1px solid #333;  */ color: #bbb; selection-background-color: #2ea2cc; selection-color: white; background: transparent;  padding: 5px 5px; font-size: 13px; border-radius: 3px; }
+SidePanel QLineEdit:hover, SidePanel #addressTxt:hover{background: #23241f;}
+SidePanel QLineEdit:focus, SidePanel #addressTxt:focus{background: #2e2f29; border-bottom: 1px solid #2ea2cc; color: #fff; font-weight: 400;}
+
+QComboBox::down-arrow{image: url(":/res/arrow_down.png"); padding: 10px;}
+/* SidePanel QComboBox::down-arrow:hover:on{image: url(":/res/arrow_down_over.png"); } */
+QComboBox::drop-down{ border-left: 1px solid #333; background: transparent;}
+QComboBox QAbstractItemView { outline: none; background: #333; color: #bbb; border: 1px solid #333; /* border: 1px solid green; */  selection-background-color: #222; }
+
+QComboBox, QSpinBox{border: 1px solid #333;}
+
+SidePanel #topPanel{ /* background: #0c6b4b; */ border-radius: 3px }
+SidePanel #topPanel QLineEdit{color: #fff;}
+SidePanel #topPanel QLineEdit:hover{}
+SidePanel #topPanel QLineEdit:focus{}
+SidePanel #faceLbl{ max-width: 96px; min-width: 96px; max-height: 96px; min-height: 96px; text-indent: center; font-size: 72px; background: #222; color: #8B8B8B;}
+SidePanel #fullNameEdt{ font-weight: 300; font-size: 18px; color: #e0e0e0;}
+
+SidePanel #personIdEdt{color: #7e7e7e;font-size: 18px;}
+SidePanel #addressTxt{max-height: 65px;}
+
+SidePanel #confirmChangesBtn{background: #2ea2cc; border: 1px solid #0074a2; height: 28px; color: #fff; padding: 0 10px; border-radius: 3px;}
+SidePanel #confirmChangesBtn:hover{background: #1e8cbe; border-color: #0074a2;}
+SidePanel #confirmChangesBtn:pressed{background: #1c82b0; border-color: #005684;}
+
+
+#refreshBtn{ border-radius: 10px; max-height: 30px; max-width: 60px; border: none; background: #777; margin-right: 10px; color: white;}
+#refreshBtn:hover{color: white; background: #666;}
+#refreshBtn:pressed{color: #999; background: #555;}
+
+HistoryView{background: #121314}
+
+#filterBar{background: #121314; padding: 10px 0}
+#filterUserEdt, #filterDateEdt{ border: none; background: #333; padding: 0 10px; height: 30px; color: #fff;}
+
+#filterOperation{height: 30px; padding: 0 10px; border: none; background: #333; color: #fff;}
+#filterOperation::drop-down{ background: transparent;}
+#filterOperation::down-arrow{image: url(":/res/arrow_down.png"); padding: 10px;}
+#filterOperation QAbstractItemView { outline: none; background: #333; color: #bbb; border: 1px solid #333; /* border: 1px solid green; */  selection-background-color: #222; }
+#filterOperation QAbstractItemView::item{padding: 10px 0;}
+
+
+#filterBar QLabel{color: #555;}
+QSpinBox{height: 30px; border: none; background: #333; color: gray; padding: 0 10px; selection-background-color: transparent;}
+QSpinBox::up-button{border: none;image: url(":/res/arrow_up.png");}
+QSpinBox::up-button:hover{border: none;image: url(":/res/arrow_up_over.png");}
+QSpinBox::down-button{border: none;image: url(":/res/arrow_down.png");}
+QSpinBox::down-button:hover{border: none;image: url(":/res/arrow_down_over.png");}
+/* */
+#filterBtn{ border: none; background: #7aa710; color: white; height: 30px; padding: 0 10px; border-radius: 3px;}
+#filterBtn:hover{background: #84bd00;}
+#filterBtn:pressed{background: #6a920f;}
+
+QTableView{background: #121314; border: none; color: #dfe0e5; gridline-color: #222326; font-size: 13px; }
+QTableView::item {border:none; padding: 0 10px;}
+QTableView::item:selected{background: #222326; color: #85bb23;}
+QHeaderView::section {background-color: #1a1c1d; color: #949599; border: none; border-bottom: 1px solid #333; padding: 10px 0;}
+
+AboutView{background: #121314;}
+AboutView QLabel{ color: #dfe0e5; font-size: 14px; }
+#aboutPageContent{padding-top: 20px; color: #999;}
+#aboutPageContent h3{color: red;}
+
+SettingsView{background: #121314;}
+SettingsView QLabel{color: gray}
+
+#leftFrame{ max-width: 300px }
+
+#optionsLbl, #usersLbl{ color: white; font-size: 24px; font-weight: 300; margin-bottom:10px;}
+#eigenFaceSbx, #fisherFaceSbx, #LBPHFaceSbx{ width: 50px;}
+#eigenFaceRadio, #fisherFaceRadio, #LBPHFaceRadio{ font-size: 14px; color: #bebdb1; padding-right: 30px;}
+#eigenFaceRadio:checked, #fisherFaceRadio:checked, #LBPHFaceRadio:checked{ color: #15b74e; }
+#usersTable{ border: none;}
+
+#thresholdLbl, #methodLbl{ font-size: 16px;  }
+
+#saveOptions, #saveUsers{background: #15b74e; border: none; color: #fff; padding: 10px 15px;}
+
+#addUserBtn, #editUserBtn, #deleteUserBtn{ border: none; font-size: 14px; padding: 5px 10px;   }
+#addUserBtn:hover, #editUserBtn:hover, #deleteUserBtn:hover{color: #fff;}
+
+#addUserBtn{ background: #e8b019; color: #f4e1af;}
+#addUserBtn:pressed{background: #d9a926;}
+
+#editUserBtn{ background: #3C3C3C; color: #E4E4E4;}
+#editUserBtn:pressed{background: #303030;}
+
+#deleteUserBtn{ background: #E31E1E; color: #FBDBDB;}
+#deleteUserBtn:pressed{background: #D91717;}
+#deleteUserBtn:disabled{background: #8C8C8C;}
+
+
+#usersTable{background: #1A1B1C}
+#userFormFrame{ background: #24272B ;}
+#userIdLbl{ font-size: 18px; color: #626262; }
+#usernameEdt, #passwordEdt{background: #32373A; border: none; padding: 5px; color: #BBBBBB;}
+#roleCbx{}
+#personIdSbx{width: 50px;}
+
+#userConfirmBtn{ border: none; background: #7aa710; color: white; height: 30px; padding: 0 20px; border-radius: 3px;}
+#userConfirmBtn:hover{background: #84bd00;}
+#userConfirmBtn:pressed{background: #6a920f;}
+
+
+
+StatsView{background: #121314;  }
+
+AddView{background: #121314;}
+
+#addLbl{font-size: 18px; color: #fff;}
+
+#counterLbl{ min-height: 106px; min-width: 106px; }
+
+#takePic, #delPic{background-color: #ddd; background-repeat: no-repeat; background-position: center; border-bottom: 1px solid #111; border-radius: 30px;  width: 64px; height: 64px}
+#takePic:hover, #delPic:hover{background-color: #d0d0d0;}
+#takePic:pressed, #delPic:pressed{background-color: #eee;}
+
+#takePic{background-image: url(":/res/cam.png"); }
+#delPic{background-image: url(":/res/delPic.png"); }
+
+SearchPage{background: #121314}
+#searchBar QLabel{color: #777;}
+#searchBar{max-height: 100px; background: #252729; border-radius: 3px}
+#searchResult{background: #121314;}
+
+#searchResultScroll{}
+
+#search_nameEdt, #search_professionEdt, #search_personIdEdt, #search_addressEdt, #search_emailEdt, #search_phoneEdt, #search_birthCityEdt, #search_birthdayEdt
+{
+	border: none; background: #333; padding: 0 10px; height: 30px; color: #fff;
+}
+
+#search_btn{ border: none; background: #7aa710; color: white; height: 50px; padding: 0 10px; border-radius: 3px;}
+#search_btn:hover{background: #84bd00;}
+#search_btn:pressed{background: #6a920f;}
+
+#numberResultLbl{ font-size: 18px; color: #eee; margin-top: 15px}
+
+#chooseMediaFrm{ max-width: 96px;}
+#chooseCam, #chooseImages, #chooseVideo{ 
+	background: #262626; color: #D3D3D3; border: none;
+	background-position: center; background-repeat: no-repeat; min-width: 96px; max-width: 96px;
+	padding-bottom: 10px; text-align: bottom; height: 70px}
+
+#chooseCam:hover, #chooseImages:hover, #chooseVideo:hover{background-color: #1B1B1B;}
+#chooseCam:checked, #chooseImages:checked, #chooseVideo:checked{background-color: #D3D3D3; color: #222;}
+
+#chooseCam{border-bottom: 1px solid #181818; background-image: url(":/res/webcam.png"); border-top-left-radius: 10px; border-top-right-radius: 10px; }
+#chooseCam:checked{background-image: url(":/res/webcam_active.png"); }
+
+#chooseImages{border-bottom: 1px solid #181818; background-image: url(":/res/stack_photos.png"); border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; }
+#chooseImages:checked{ background-image: url(":/res/stack_photos_active.png"); }
+#chooseVideo{}
+/*
+text-align: bottom;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	font-size: 11px;
+	color: #888888;
+	border: none;
+	height: 67px;
+	width: 70px;
+	padding-bottom: 13px;
+
+*/
+#theaterLbl[type = "camera"]{
+
+}
+
+#theaterLbl[type = "drop"]{
+
+	background-color: transparent;
+	border-radius: 10px;
+	min-height: 468px;
+	max-height: 468px;
+	min-width: 632px;
+	max-width: 632px;
+	border: 4px dashed #444;
+}
+
+#theaterLbl[stat = "dropEnter"] #theaterLbl[type = "dropover"]{
+	border: 4px solid blue;
+}
+
+#newPersonBtn{background: #15b74e; color: #e1f8e9 ; padding: 3px 10px; font-size: 12px;  border: none; border-radius: 3px;}
+#newPersonBtn:hover{color: white;}
+#newPersonBtn:pressed{background: #14a748;}
+
+#refuteBtn, #ignoreBtn, #confirmBtn{border: none; border-bottom-width: 1px; border-style: solid;}
+
+#refuteBtn{background: #ff6552; padding: 10px; color: #FFF3F2; border-color: #FF3A24;border-top-left-radius: 10px; border-bottom-left-radius:10px;}
+#ignoreBtn{background: #abbcbc; padding: 10px; color: #F7F9F9; border-color: #93A8A8;}
+#confirmBtn{background: #90cd00; padding: 10px; color: #FBFFF2; border-color: #80B700; border-top-right-radius: 10px; border-bottom-right-radius:10px; }
+
+#refuteBtn:hover, #ignoreBtn:hover, #confirmBtn:hover{color: white;}
+#refuteBtn:pressed, #ignoreBtn:pressed, #confirmBtn:pressed{ background: #222;}
+
+#tauxRecLbl{ font-weight: 300; font-size: 12px; color: #BCBCBC;}
+#eigenRatioLbl, #fisherRatioLbl, #lbphRatioLbl{ font-size: 14px; color: #6bcbca;}
+
+#statLbl{color: #AD0A16;}
+
+#tempAccountLbl{background: rgba(255,22,22,200); color: #FFF0F0; font-size: 18px; padding: 30px 0;}
